@@ -1,12 +1,10 @@
 const express = require("express");
-const controller = require("../controllers/userController");
+const controller = require("../controllers/userController.js");
+const chekValidation = require('../middlewares/authUser')
 
 const router = express.Router();
 
-router.post('/', (req,res)=>{
-    res.json({msg:"verifica a rota correta! /cadastrar ou /login"})
-})
-
+router.get('/:id', chekValidation, controller.listar)
 router.post("/cadastrar", controller.registrar);
 router.post("/login", controller.login);
 

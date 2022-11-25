@@ -40,7 +40,6 @@ async function atualizar(req, res) {
   const filme = new Filme(req.body);
   try {
     await Filme.findByIdAndUpdate(req.params.id, req.body);
-    await Filme.save();
     res.send(filme);
   } catch (e) {
     res.status(500).send(e);
