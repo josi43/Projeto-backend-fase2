@@ -11,5 +11,5 @@ Milena
 <p>
 observacoes:<br>
 1. Agora para realizr o CRUD, é necessário o token, que é obtido ao realizar o login.<br>
-2. Houveram mudanças no foco da API da fase 1, simplificamos e removemos as categorias, mantendo somente duas rotas: a de login e a rota dos filmes.<br>
-3. Não há requisito para a senha, esta é de livre escolha do usuário.
+2. Simplificamos e removemos as categorias, mantendo somente duas rotas: a de login e a rota dos filmes.<br>
+3. Não há requisito para a senha.
